@@ -7,7 +7,7 @@ function App() {
   return (
     <main>
       <Header />
-      <section>
+      <section className="flex flex-wrap justify-center gap-[20px] p-[20px_40px]">
         {contents.map((el) => (
           <Content key={el.id} content={el} />
         ))}
@@ -15,5 +15,13 @@ function App() {
     </main>
   );
 }
+
+// section {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   gap: 20px;
+//   padding: 20px 40px;
+// }
 
 export default App;
